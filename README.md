@@ -1,4 +1,4 @@
-Hibernate Spring JPA basic staff.
+## Hibernate Spring JPA basic things.
 
 - How run the application 
 
