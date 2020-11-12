@@ -115,7 +115,7 @@ class RepositoryUtilsTest {
 
 
     /**
-     * DefaultPersistEventListener #
+     * DefaultPersistEventListener #onPersist -> switch
      */
     @DisplayName("Should perform remove and persist")
     @Test

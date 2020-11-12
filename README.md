@@ -87,3 +87,18 @@ In addition, I encourage you to and some reference explanation in the code:
 DefaultPersistEventListener#onPersist -> switch DELETED
 PersistenceContext -> StatefulPersistenceContext field EntityEntryContext
 ```
+
+- **RepositoryUtilsTest#shouldNotPerformAnyQueries**
+
+Action Queue order
+
+- OrphanRemovalAction
+- AbstractEntityInsertAction
+- EntityUpdateAction
+- QueuedOperationCollectionAction
+- CollectionRemoveAction
+- CollectionUpdateAction
+- CollectionRecreateAction
+- EntityDeleteAction
+
+reference from code https://github.com/hibernate/hibernate-orm/blob/e5dc635a52362f69b69acb8d5b166b69b165dbbd/hibernate-core/src/main/java/org/hibernate/engine/spi/ActionQueue.java#L106
