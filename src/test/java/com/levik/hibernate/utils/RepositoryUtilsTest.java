@@ -75,10 +75,12 @@ class RepositoryUtilsTest {
 
         //when
         RepositoryUtils.execute(it -> {
+            //comment merge and try to run it...
             log.info("When ----- merge");
             Player managedPlayer = it.merge(player);
             log.info("When ----- merge");
             log.info("When ----- remove");
+            //change managedPlayer to player
             it.remove(managedPlayer);
             log.info("When ----- remove");
         });

@@ -15,12 +15,12 @@ public class PlayerController {
     private final PlayerService playerService;
 
     @GetMapping
-    public PlayerDto getPlayers() {
+    public PlayerDto getPlayerById() {
         return playerService.findAll();
     }
 
     @GetMapping("/{playerId}")
-    public Player getPlayers(@PathVariable("playerId") Long playerId) {
+    public Player getPlayerById(@PathVariable("playerId") Long playerId) {
         return playerService.findOne(playerId);
     }
 

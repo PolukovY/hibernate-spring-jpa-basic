@@ -23,7 +23,6 @@ public class PlayerApi {
         //given
         String url = getHost("/players");
 
-
         //when
         return testRestTemplate.getForEntity(url, PlayerDto.class);
     }
